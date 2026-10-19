@@ -1,0 +1,104 @@
+Creating test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+Found 63 test(s).
+Operations to perform:
+  Synchronize unmigrated apps: messages, staticfiles
+  Apply all migrations: admin, auth, contenttypes, core, sessions
+Synchronizing apps without migrations:
+  Creating tables...
+    Running deferred SQL...
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying core.0001_initial... OK
+  Applying core.0002_alter_setting_value... OK
+  Applying core.0003_mutation... OK
+  Applying core.0004_staffmfa... OK
+  Applying core.0005_refund_shipping_cents_refund_tax_cents... OK
+  Applying sessions.0001_initial...test_A01_public_routes_and_language (core.tests.test_acceptance.Acceptance.test_A01_public_routes_and_language) ... ok
+test_A02_browser_cannot_choose_price (core.tests.test_acceptance.Acceptance.test_A02_browser_cannot_choose_price) ... ok
+test_A03_volunteer_and_care_coexist_lowest_price (core.tests.test_acceptance.Acceptance.test_A03_volunteer_and_care_coexist_lowest_price) ... ok
+test_A04_expired_verification_requires_requote (core.tests.test_acceptance.Acceptance.test_A04_expired_verification_requires_requote) ... ok
+test_A05_open_multiple_needs_persist_and_track (core.tests.test_acceptance.Acceptance.test_A05_open_multiple_needs_persist_and_track) ... ok
+test_A06_guessed_case_and_attachment_are_hidden (core.tests.test_acceptance.Acceptance.test_A06_guessed_case_and_attachment_are_hidden) ... ok
+test_A07_caseworker_cannot_approve_and_is_audited (core.tests.test_acceptance.Acceptance.test_A07_caseworker_cannot_approve_and_is_audited) ... ok
+test_A08_outside_needs_recorded_delivery_blocked (core.tests.test_acceptance.Acceptance.test_A08_outside_needs_recorded_delivery_blocked) ... ok
+test_A09_credit_is_funded_scoped_and_bounded (core.tests.test_acceptance.Acceptance.test_A09_credit_is_funded_scoped_and_bounded) ... ok
+test_A10_last_item_second_order_rejected (core.tests.test_acceptance.Acceptance.test_A10_last_item_second_order_rejected) ... ok
+test_A11_release_stock_and_credit_once (core.tests.test_acceptance.Acceptance.test_A11_release_stock_and_credit_once) ... ok
+test_A12_payment_event_replay_is_idempotent (core.tests.test_acceptance.Acceptance.test_A12_payment_event_replay_is_idempotent) ... ok
+test_A13_mixed_source_refund_original_sources_and_corporate_adjustment (core.tests.test_acceptance.Acceptance.test_A13_mixed_source_refund_original_sources_and_corporate_adjustment) ... ok
+test_A14_split_by_seller_fulfiller (core.tests.test_acceptance.Acceptance.test_A14_split_by_seller_fulfiller) ... ok
+test_A15_pickup_single_use (core.tests.test_acceptance.Acceptance.test_A15_pickup_single_use) ... ok
+test_A16_water_booking_has_no_payment_contract (core.tests.test_acceptance.Acceptance.test_A16_water_booking_has_no_payment_contract) ... ok
+test_A17_assets_require_inspection_and_receipt (core.tests.test_acceptance.Acceptance.test_A17_assets_require_inspection_and_receipt) ... ok
+test_A18_purpose_pools_and_restrictions (core.tests.test_acceptance.Acceptance.test_A18_purpose_pools_and_restrictions) ... ok
+test_A19_partial_aid_counts_only_on_delivery (core.tests.test_acceptance.Acceptance.test_A19_partial_aid_counts_only_on_delivery) ... ok
+test_A20_detail_export_same_filter_and_totals (core.tests.test_acceptance.Acceptance.test_A20_detail_export_same_filter_and_totals) ... ok
+test_A21_household_dedup_does_not_guess_other_users (core.tests.test_acceptance.Acceptance.test_A21_household_dedup_does_not_guess_other_users) ... ok
+test_A22_referral_and_estimates_are_not_outcomes_or_cash_received (core.tests.test_acceptance.Acceptance.test_A22_referral_and_estimates_are_not_outcomes_or_cash_received) ... ok
+test_A23_roles_are_scoped_at_api (core.tests.test_acceptance.Acceptance.test_A23_roles_are_scoped_at_api) ... ok
+test_A24_story_consent_is_optional_and_private (core.tests.test_acceptance.Acceptance.test_A24_story_consent_is_optional_and_private) ... ok
+test_A25_unconfigured_external_operations_fail_closed (core.tests.test_acceptance.Acceptance.test_A25_unconfigured_external_operations_fail_closed) ... ok
+test_A26_empty_and_filtered_views_do_not_fake_data (core.tests.test_acceptance.Acceptance.test_A26_empty_and_filtered_views_do_not_fake_data) ... ok
+test_A27_shared_supply_cannot_double_allocate (core.tests.test_acceptance.Acceptance.test_A27_shared_supply_cannot_double_allocate) ... ok
+test_A28_serialization_preserves_relationships (core.tests.test_acceptance.Acceptance.test_A28_serialization_preserves_relationships) ... ok
+test_A29_malicious_upload_rejected_and_excel_escaped (core.tests.test_acceptance.Acceptance.test_A29_malicious_upload_rejected_and_excel_escaped) ... ok
+test_A30_new_york_day_bounds_handle_dst (core.tests.test_acceptance.Acceptance.test_A30_new_york_day_bounds_handle_dst) ... ok
+test_A31_admin_creates_product_without_code_change (core.tests.test_acceptance.Acceptance.test_A31_admin_creates_product_without_code_change) ... ok
+test_A32_campaign_review_publish_and_checkout (core.tests.test_acceptance.Acceptance.test_A32_campaign_review_publish_and_checkout) ... ok
+test_A33_unapproved_or_paused_cannot_checkout (core.tests.test_acceptance.Acceptance.test_A33_unapproved_or_paused_cannot_checkout) ... ok
+test_A34_tamper_and_redirect_cannot_mark_success (core.tests.test_acceptance.Acceptance.test_A34_tamper_and_redirect_cannot_mark_success) ... ok
+test_A35_repeated_donation_event_one_receipt_and_entry (core.tests.test_acceptance.Acceptance.test_A35_repeated_donation_event_one_receipt_and_entry) ... ok
+test_A36_failed_refund_does_not_reduce_confirmed (core.tests.test_acceptance.Acceptance.test_A36_failed_refund_does_not_reduce_confirmed) ... ok
+test_A37_overfund_and_late_success_not_lost (core.tests.test_acceptance.Acceptance.test_A37_overfund_and_late_success_not_lost) ... ok
+test_A38_donor_privacy (core.tests.test_acceptance.Acceptance.test_A38_donor_privacy) ... ok
+test_A39_cancel_creates_review_and_notification (core.tests.test_acceptance.Acceptance.test_A39_cancel_creates_review_and_notification) ... ok
+test_A40_sources_remain_separate (core.tests.test_acceptance.Acceptance.test_A40_sources_remain_separate) ... ok
+test_A41_reconciliation_expenses_disputes_consistency (core.tests.test_acceptance.Acceptance.test_A41_reconciliation_expenses_disputes_consistency) ... ok
+test_A42_no_live_payments_or_fake_bank_settlement (core.tests.test_acceptance.Acceptance.test_A42_no_live_payments_or_fake_bank_settlement) ... ok
+test_admin_and_member_routes_render (core.tests.test_acceptance.Acceptance.test_admin_and_member_routes_render) ... ok
+test_idempotent_stock_mutation (core.tests.test_acceptance.Acceptance.test_idempotent_stock_mutation) ... ok
+test_private_attachment_access_and_csrf (core.tests.test_acceptance.Acceptance.test_private_attachment_access_and_csrf) ... ok
+test_self_review_and_unfunded_approval_denied (core.tests.test_acceptance.Acceptance.test_self_review_and_unfunded_approval_denied) ... ok
+test_signed_webhook_and_expiry (core.tests.test_acceptance.Acceptance.test_signed_webhook_and_expiry) ... ok
+test_anonymous_draft_saved_server_side_and_login_required_to_submit (core.tests.test_security.SecurityAndJobs.test_anonymous_draft_saved_server_side_and_login_required_to_submit) ... ok
+test_duplicate_csv_import_does_not_double_stock (core.tests.test_security.SecurityAndJobs.test_duplicate_csv_import_does_not_double_stock) ... ok
+test_expired_aid_reservation_releases_once (core.tests.test_security.SecurityAndJobs.test_expired_aid_reservation_releases_once) ... ok
+test_household_link_requires_consent_and_affects_new_requests (core.tests.test_security.SecurityAndJobs.test_household_link_requires_consent_and_affects_new_requests) ... ok
+test_json_array_rejected_without_server_error (core.tests.test_security.SecurityAndJobs.test_json_array_rejected_without_server_error) ... ok
+test_login_rate_limit (core.tests.test_security.SecurityAndJobs.test_login_rate_limit) ... ok
+test_malformed_cart_line_is_400 (core.tests.test_security.SecurityAndJobs.test_malformed_cart_line_is_400) ... ok
+test_nonempty_order_work_table_renders_for_warehouse_without_aid_identity (core.tests.test_security.SecurityAndJobs.test_nonempty_order_work_table_renders_for_warehouse_without_aid_identity) ... ok
+test_production_staff_mfa_gate (core.tests.test_security.SecurityAndJobs.test_production_staff_mfa_gate) ... ok
+test_refunds_and_chargebacks_reduce_spendable_funds (core.tests.test_security.SecurityAndJobs.test_refunds_and_chargebacks_reduce_spendable_funds) ... ok
+test_required_product_safety_fields_block_publication (core.tests.test_security.SecurityAndJobs.test_required_product_safety_fields_block_publication) ... ok
+test_role_changes_require_password_and_reason (core.tests.test_security.SecurityAndJobs.test_role_changes_require_password_and_reason) ... ok
+test_security_headers_and_private_cache (core.tests.test_security.SecurityAndJobs.test_security_headers_and_private_cache) ... ok
+test_shipping_refund_is_separate_and_cannot_exceed_original (core.tests.test_security.SecurityAndJobs.test_shipping_refund_is_separate_and_cannot_exceed_original) ... ok
+test_stale_waitlist_is_not_active_gap (core.tests.test_security.SecurityAndJobs.test_stale_waitlist_is_not_active_gap) ... ok
+test_totp_encrypted_seed_and_replay_rejection (core.tests.test_security.SecurityAndJobs.test_totp_encrypted_seed_and_replay_rejection) ... ok
+
+----------------------------------------------------------------------
+Ran 63 tests in 0.740s
+
+OK
+Destroying test database for alias 'default' ('file:memorydb_default?mode=memory&cache=shared')...
+ OK
+System check identified no issues (0 silenced).
+Released 0 orders; removed 0 expired evidence files. No real notifications sent.
+Released 0 orders; removed 0 expired evidence files. No real notifications sent.

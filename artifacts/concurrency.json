@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "buyer": 0,
+      "result": "rejected",
+      "code": "stock"
+    },
+    {
+      "buyer": 1,
+      "result": "reserved",
+      "order": "417c9fd4-f7fc-4c81-9e92-ec3cc59abaa6"
+    }
+  ],
+  "on_hand": 1,
+  "reserved": 1,
+  "available": 0,
+  "database": "isolated SQLite file, two simultaneous connections",
+  "simultaneous_donations": {
+    "results": [
+      "confirmed",
+      "confirmed"
+    ],
+    "confirmed_cents": 12000,
+    "actual_percent": 120.0,
+    "visual_percent": 100,
+    "receipts": 2
+  }
+}

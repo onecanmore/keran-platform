@@ -1,0 +1,55 @@
+{
+  "tool": "axe-core 4.11.1",
+  "note": "Automated checks supplement, not replace, human accessibility review. CSP bypass is test instrumentation only.",
+  "pages": [
+    {
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ],
+      "passes": 21,
+      "route": "/"
+    },
+    {
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ],
+      "passes": 19,
+      "route": "/shop/"
+    },
+    {
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ],
+      "passes": 16,
+      "route": "/help/"
+    },
+    {
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ],
+      "passes": 21,
+      "route": "/help/new/"
+    },
+    {
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ],
+      "passes": 16,
+      "route": "/fundraising/"
+    },
+    {
+      "violations": [],
+      "incomplete": [
+        "color-contrast"
+      ],
+      "passes": 19,
+      "route": "/login/"
+    }
+  ],
+  "violations": 0
+}

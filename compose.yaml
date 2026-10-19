@@ -1,0 +1,52 @@
+services:
+  web:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DATA_DIR: /app/var
+      DEBUG: '0'
+      PAYMENT_MODE: sandbox
+      REQUIRE_STAFF_MFA: '1'
+      SECRET_KEY: ${SECRET_KEY:?Generate a private SECRET_KEY in .env}
+    volumes:
+      - data:/app/var
+      - static:/app/staticfiles
+    expose: ['8000']
+    healthcheck:
+      test: ['CMD', 'python', '-c', 'import socket; socket.create_connection(("127.0.0.1",8000),3).close()']
+      interval: 30s
+      timeout: 5s
+      retries: 3
+  jobs:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DATA_DIR: /app/var
+      DEBUG: '0'
+    volumes:
+      - data:/app/var
+    command: ['sh', '-c', 'while true; do python manage.py run_jobs; sleep 60; done']
+    depends_on:
+      web:
+        condition: service_healthy
+  proxy:
+    image: caddy:2.10.2
+    restart: unless-stopped
+    environment:
+      PUBLIC_HOST: ${PUBLIC_HOST:?Set PUBLIC_HOST to an owned hostname}
+    ports: ['80:80', '443:443']
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - static:/srv/static:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      web:
+        condition: service_healthy
+volumes:
+  data:
+  static:
+  caddy_data:
+  caddy_config:

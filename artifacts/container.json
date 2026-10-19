@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "server": "Gunicorn in non-root Docker container, loopback bind only",
+  "checks": [
+    "migrations and real draft seed",
+    "empty verified public catalogue",
+    "CSRF-protected registration and login",
+    "private request database write",
+    "container restart preserves secret key, session, user and case"
+  ]
+}

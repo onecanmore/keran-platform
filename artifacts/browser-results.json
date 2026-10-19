@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "desktop home and no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "keyboard skip link",
+      "passed": true
+    },
+    {
+      "name": "shopping server quote \u2192 order \u2192 sandbox event \u2192 account",
+      "passed": true
+    },
+    {
+      "name": "open private request with multi-category needs and no story consent",
+      "passed": true
+    },
+    {
+      "name": "volunteer verification submission and status",
+      "passed": true
+    },
+    {
+      "name": "campaign policy \u2192 contribution \u2192 sandbox confirmation and private receipt",
+      "passed": true
+    },
+    {
+      "name": "reviewer updates case and confirms need quantities",
+      "passed": true
+    },
+    {
+      "name": "reviewer manually approves volunteer with configured expiry",
+      "passed": true
+    },
+    {
+      "name": "plan links original need and reserves aid inventory",
+      "passed": true
+    },
+    {
+      "name": "warehouse fulfillment with one-time pickup code",
+      "passed": true
+    },
+    {
+      "name": "partial resource handover updates allocated/fulfilled without inflating remaining needs",
+      "passed": true
+    },
+    {
+      "name": "filtered case details and Excel export",
+      "passed": true
+    },
+    {
+      "name": "remembered Traditional Chinese selection",
+      "passed": true
+    },
+    {
+      "name": "390px mobile layout across shop, help, cart, fundraising, account and work centre",
+      "passed": true
+    },
+    {
+      "name": "no uncaught browser JavaScript errors",
+      "passed": true
+    },
+    {
+      "name": "physical online backup/restore with identical relational and ledger tables",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+[
+  {
+    "id": "home-desktop-en",
+    "file": "home-desktop-en.png",
+    "page": "home",
+    "device": "desktop",
+    "language": "en",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "height": 3294,
+    "url_path": "/"
+  },
+  {
+    "id": "shop-desktop-en",
+    "file": "shop-desktop-en.png",
+    "page": "shop",
+    "device": "desktop",
+    "language": "en",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "height": 1561,
+    "url_path": "/shop/"
+  },
+  {
+    "id": "home-mobile-en",
+    "file": "home-mobile-en.png",
+    "page": "home",
+    "device": "mobile",
+    "language": "en",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "height": 4676,
+    "url_path": "/"
+  },
+  {
+    "id": "shop-mobile-en",
+    "file": "shop-mobile-en.png",
+    "page": "shop",
+    "device": "mobile",
+    "language": "en",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "height": 2250,
+    "url_path": "/shop/"
+  },
+  {
+    "id": "home-desktop-zh",
+    "file": "home-desktop-zh.png",
+    "page": "home",
+    "device": "desktop",
+    "language": "zh",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "height": 3296,
+    "url_path": "/"
+  },
+  {
+    "id": "shop-desktop-zh",
+    "file": "shop-desktop-zh.png",
+    "page": "shop",
+    "device": "desktop",
+    "language": "zh",
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "height": 1563,
+    "url_path": "/shop/"
+  },
+  {
+    "id": "home-mobile-zh",
+    "file": "home-mobile-zh.png",
+    "page": "home",
+    "device": "mobile",
+    "language": "zh",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "height": 4648,
+    "url_path": "/"
+  },
+  {
+    "id": "shop-mobile-zh",
+    "file": "shop-mobile-zh.png",
+    "page": "shop",
+    "device": "mobile",
+    "language": "zh",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "height": 2159,
+    "url_path": "/shop/"
+  }
+]
